@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<!-- Mirrored from toolpe.com/phone-number-generator.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 05:03:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="shortcut icon" href="dist/img/mini-logo.png">
+  <title>Tool PE</title>
+
+  <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="dist/css/adminlte.min.css">
+<link rel="stylesheet" href="my-styleae52.css?v=5">
+<!-- Google Font: Source Sans Pro -->
+<link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1SS9523N21"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1SS9523N21');
+</script>
+
+</head>
+<body class="hold-transition layout-fixed layout-navbar-fixed ">
+<div class="wrapper">
+
+
+
+  <!-- Main Sidebar Container -->
+  <!-- Content Wrapper. Contains page content -->
+  <div class="">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark"></h1>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Phone Number Generator</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <div class="card-body">
+
+                <div class="row">
+
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label class="col-form-label" for="code">Country Code </label>
+                      <input type="text" class="form-control" id="code" name="code" value="+855">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label class="col-form-label" for="head">Phone Head </label>
+                      <input type="text" class="form-control" id="head" name="head" value="96">
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label class="col-form-label" for="phone">Phone </label>
+                      <input type="text" class="form-control" id="phone" name="phone" value="8019555">
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label class="col-form-label" for="howmany">How Many Number </label>
+                      <input type="text" class="form-control" id="howmany" name="howmany" value="1000">
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group">
+                      <label class="col-form-label" for="plusNumber">Plus Number</label>
+                      <input type="text" class="form-control" id="plusNumber" name="plusNumber" value="1">
+                    </div>
+                  </div>
+                  <div class="col-sm-3" style="margin-top: 6px;">
+                    <label>Option Password:</label>
+                    <select id="option" class="form-control">
+                      <option value="1">Password 0968019555</option>
+                      <option value="2">Password 968019555</option>
+                      <option value="3">Password 8019555</option>
+                      <option value="4">Password Custom</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="form-group" id="customPassword" style="display: none">
+                      <label class="col-form-label" for="custom">Custom Password </label>
+                      <input type="text" class="form-control" id="custom" name="custom" value="11112222">
+                    </div>
+                  </div>
+                  <div style="width: 100%; height: 15px;display: block;"></div>
+                  <div class="col-sm-12">
+                    <button class="btn btn-info btn-block" onclick="generate()" type="button" id="generate">Generate
+                    </button>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Phone Number</label>
+                      <textarea class="form-control" rows="7" id="result"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Password</label>
+                      <textarea class="form-control" rows="7" id="result2"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label>Result</label>
+                      <textarea class="form-control" rows="7" id="result3"></textarea>
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+            </div>
+            <!-- /.card -->
+
+          </div>
+
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<script src="plugins/jquery/jquery.min.js"></script>
+
+<script>
+  $('#option').on('change', function () {
+    if (this.value == 4) {
+      $("#customPassword").show();
+    }
+  });
+
+  function generate() {
+    var code = document.getElementById("code").value;
+    var head = document.getElementById("head").value;
+    var option = document.getElementById("option").value;
+    var passwordCostom = document.getElementById("custom").value;
+    var phone = parseInt(document.getElementById("phone").value);
+    var howmany = parseInt(document.getElementById("howmany").value);
+    var plusNum = parseInt(document.getElementById("plusNumber").value);
+    var result = document.getElementById("result");
+    var result2 = document.getElementById("result2");
+    var result3 = document.getElementById("result3");
+    var results = [];
+    var results2 = [];
+    var results3 = [];
+
+    for (var i = 0; i < howmany; i++) {
+      phone = phone + plusNum;
+      results.push(code + head + phone);
+
+
+      if (option == 1) {
+        results2.push("0" + head + phone);
+        results3.push(code + head + phone + "|0" + head + phone);
+      } else if (option == 2) {
+        results2.push(head + phone);
+        results3.push(code + head + phone + "|" + head + phone);
+      } else if (option == 3) {
+        results2.push(phone);
+        results3.push(code + head + phone + "|" + phone);
+      } else if (option == 4) {
+        results2.push(passwordCostom);
+        results3.push(code + head + phone + "|" + passwordCostom);
+      }
+    }
+    result.value = results.join("\n");
+    result2.value = results2.join("\n");
+    result3.value = results3.join("\n");
+  }
+
+</script>
+</body>
+
+<!-- Mirrored from toolpe.com/phone-number-generator.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 05:03:13 GMT -->
+</html>
